@@ -1,14 +1,17 @@
 
 <html>
 <body>
-
-<p id="p2">Hello World!</p>
+<input type="text" class="cbFormTextField" size="2" maxlength="255" name="EditRecordnote" id="EditRecordnote" value="10">
 
 <script>
-document.getElementById("p2").style.color = "blue";
+function f_color(){
+if (document.getElementById('EditRecordnote').value = '10') {
+document.getElementById('EditRecordnote').style.color = "red";
+document.getElementById('EditRecordnote').style.background="yellow";
+}
+}
+f_color();
 </script>
-
-<p>The paragraph above was changed by a script.</p>
 
 </body>
 </html>
